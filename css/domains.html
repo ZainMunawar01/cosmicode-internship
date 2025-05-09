@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cosmicode Internship</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="icon1111.png" rel="icon">
+  <link href="icon1111.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header">
+    <div id="topbar">
+      <div class="container">
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="#intro" class="scrollto"><span>Cosmicode</span></a></h1>
+      </div>
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Why Join?</a></li>
+          <li><a href="index.html">What's Included</a></li>
+          <li><a href="interneportal.html">Interne Portal</a></li>
+          </li>
+          <li><a href="#footer">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+    </div>
+  </header><!-- #header -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Intern Portal - CosmiCode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #ffffff;
+        font-family: 'Segoe UI', sans-serif;
+      }
+      .intern-portal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top:100px; /* you can adjust this value as you like */
+}
+
+      .intern-portal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      @media (max-width: 480px) {
+  .intern-portal {
+    padding: 60px 15px 20px;
+  }
+
+  .login-box {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+
+      .login-box {
+        position: relative;
+        overflow: hidden;
+        background: #000000;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        width: 350px;
+        text-align: center;
+        animation: fadeInUp 0.9s ease forwards;
+      }
+  
+      .login-box h2 {
+        color: #ffffff;
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 24px;
+        z-index: 2;
+        position: relative;
+      }
+  
+      .login-box input[type="text"],
+      .login-box input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #333333;
+        border-radius: 8px;
+        background: #1a1a1a;
+        color: #ffffff;
+        font-size: 14px;
+        transition: border-color 0.3s ease;
+        z-index: 2;
+        position: relative;
+      }
+  
+      .login-box input[type="text"]:focus,
+      .login-box input[type="password"]:focus {
+        border-color: #4a90e2;
+        outline: none;
+      }
+  
+      .login-box button {
+        width: 100%;
+        padding: 12px;
+        background: #4a90e2;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 18px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+        z-index: 2;
+        position: relative;
+      }
+  
+      .login-box button:hover {
+        background: #357ab8;
+        transform: translateY(-2px);
+      }
+  
+      .notes {
+        margin-top: 20px;
+        font-size: 13px;
+        color: #aaaaaa;
+        line-height: 1.5;
+        text-align: left;
+        z-index: 2;
+        position: relative;
+      }
+  
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  
+      /* Falling lines animation */
+      .falling-lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 1;
+      }
+  
+      .line {
+        position: absolute;
+        width: 2px;
+        height: 20px;
+        background: #4a90e2;
+        opacity: 0.7;
+        animation: fall linear infinite;
+      }
+  
+      .line.red {
+        background: #e74c3c;
+      }
+  
+      @keyframes fall {
+        0% {
+          top: -20px;
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.7;
+        }
+        100% {
+          top: 110%;
+          opacity: 0;
+        }
+      }
+  
+    </style>
+  </head>
+  <body>
+  
+    <div class="intern-portal">
+      <div class="login-box">
+        <!-- Falling Lines Container -->
+        <div class="falling-lines" id="lines-container"></div>
+  
+        <h2>Intern Portal Login</h2>
+        <form action="#">
+          <input type="text" placeholder="Intern ID" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <div class="notes">
+          * Your Intern ID and Password will be provided after registration.<br>
+          * All internship details, tasks, and your journey will be accessible through your dashboard.
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      const container = document.getElementById("lines-container");
+      const linesCount = 25;
+  
+      for (let i = 0; i < linesCount; i++) {
+        const line = document.createElement("div");
+        line.classList.add("line");
+        if (Math.random() > 0.5) line.classList.add("red");
+        line.style.left = `${Math.random() * 100}%`;
+        line.style.animationDuration = `${2 + Math.random() * 3}s`;
+        line.style.animationDelay = `${Math.random() * 5}s`;
+        container.appendChild(line);
+      }
+    </script>
+  
+  </body>
+  </html>
+  
+
+<!-- Decorative Divider Before Footer -->
+<div style="margin: 50px 0 20px; text-align: center;">
+  <span style="display: inline-block; width: 50px; height: 4px; background: #000000; border-radius: 2px;"></span>
+</div>
+    
+ 
+
+<section id="faq">
+  <div class="container">
+    <header class="section-header">
+      <h3>Frequently Asked Questions - CosmiCode Internship</h3>
+      <p>Find answers to common questions about the CosmiCode Internship Program.</p>
+    </header>
+
+    <ul id="faq-list" class="wow fadeInUp">
+      <li>
+        <a data-toggle="collapse" class="collapsed" href="#faq1"> What is the CosmiCode Internship Program? <i class="ion-android-remove"></i></a>
+        <div id="faq1" class="collapse" data-parent="#faq-list">
+          <p>
+            The CosmiCode Internship Program is a dynamic, hands-on learning experience designed to help students enhance their skills in various tech domains. The program prepares interns for the real-world tech industry, offering them exposure to live projects, mentorship, and industry-level assignments. Interns work with global clients, gaining valuable practical experience that increases their employability.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <a data-toggle="collapse" href="#faq2" class="collapsed">What are the benefits of the CosmiCode Internship Program? <i class="ion-android-remove"></i></a>
+        <div id="faq2" class="collapse" data-parent="#faq-list">
+          <p>
+            The CosmiCode Internship Program offers numerous benefits, including:
+          </p>
+          <ul>
+            <li>STC-Approved Internship Certificate</li>
+            <li>Opportunity to work on real-world projects with global clients</li>
+            <li>Direct placement opportunities with CosmiCode and partner companies</li>
+            <li>Exposure to over 45 professional tech domains</li>
+            <li>Career counseling, interview preparation, and resume-building sessions</li>
+            <li>Exclusive access to the CosmiCode intern portal for tracking progress and receiving important updates</li>
+            <li>Networking opportunities with professionals in the tech industry</li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <a data-toggle="collapse" href="#faq3" class="collapsed">What is the duration and format of the internship? <i class="ion-android-remove"></i></a>
+        <div id="faq3" class="collapse" data-parent="#faq-list">
+          <p>
+            The CosmiCode Internship Program is a 6-week, task-based program that offers both remote and on-site opportunities. Interns will work on industry-level assignments and a capstone project, with weekly tasks that increase in difficulty. The program combines self-paced learning with live project work to ensure a hands-on experience.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <a data-toggle="collapse" href="#faq4" class="collapsed">What are the key dates for registration and the internship? <i class="ion-android-remove"></i></a>
+        <div id="faq4" class="collapse" data-parent="#faq-list">
+          <p>
+            Registration for the CosmiCode Internship Program will open from 7th May to 28th May 2025. The internship will officially start on 1st June 2025. Make sure to complete your registration before the deadline to secure your spot.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <a data-toggle="collapse" href="#faq5" class="collapsed">What kind of job opportunities does CosmiCode offer after the internship? <i class="ion-android-remove"></i></a>
+        <div id="faq5" class="collapse" data-parent="#faq-list">
+          <p>
+            CosmiCode offers a wide variety of job opportunities after the internship. As a leading tech company with a global client base, we provide job placements across multiple tech domains, including web development, data science, machine learning, and more. Interns who perform well in their domain will have the opportunity to undergo job interviews with CosmiCode or its global partner companies. If successful, they will be offered permanent remote or on-site roles.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <a data-toggle="collapse" href="#faq6" class="collapsed">What is the CosmiCode Intern Portal? <i class="ion-android-remove"></i></a>
+        <div id="faq6" class="collapse" data-parent="#faq-list">
+          <p>
+            The CosmiCode Intern Portal is a dedicated dashboard where you can track your progress throughout the internship program. By logging in with your registered email and unique intern ID, you'll be able to access your tasks, assignments, feedback from mentors, and important notifications. It's the central hub for everything related to your internship experience.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <a data-toggle="collapse" href="#faq7" class="collapsed">How can I join the CosmiCode Internship Program? <i class="ion-android-remove"></i></a>
+        <div id="faq7" class="collapse" data-parent="#faq-list">
+          <p>
+            To join the CosmiCode Internship Program, simply fill out the registration form available on the CosmiCode website. You will need to provide some basic details, including your contact information and selected tech domain. Once registered, you'll receive confirmation and gain access to the intern portal to start your journey.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <a data-toggle="collapse" href="#faq8" class="collapsed">What if I have further questions? <i class="ion-android-remove"></i></a>
+        <div id="faq8" class="collapse" data-parent="#faq-list">
+          <p>
+            If you have any further questions, you can contact the CosmiCode internship support team via email. Additionally, feel free to reach out through the CosmiCode LinkedIn page or contact on Cosmicode Whatsapp.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+  
+        <div class="row">
+  
+          <!-- Left Section: Useful Links and Contact Info -->
+          <div class="col-lg-6 col-md-6">
+            <div class="row">
+              
+              <!-- Useful Links Section -->
+              <div class="col-sm-6">
+                <div class="footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li class="active"><a href="index.html#intro">Home</a></li>
+                    <li><a href="blogs.html">Blogs & Articles</a></li>
+                        <li><a href="ictcluballiances.html">Alliances</a></li>
+                        <li><a href="ictclubteam.html">ICT Club Team</a></li>
+                        <li><a href="ictclubcounselors.html">Join our Team</a></li>
+                        <li><a href="https://mnsuet.edu.pk/">MNS UET Multan</a></li>
+                        <li><a href="index.html#faq">FAQs</a></li>
+                  </ul>
+                </div>
+              </div>
+  
+              <!-- Contact Us Section -->
+              <div class="col-sm-6">
+                <div class="footer-links">
+                  <h4>Contact Us</h4>
+                  <p>
+                   
+                    <strong>Email:</strong>  cosmicodepk@gmail.com
+                  </p>
+                </div>
+                <div class="social-links">
+                  <a href="mailto:ict.mnsuet@gmail.com" class="email" target="_blank">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                  <a href="https://www.instagram.com/ictclub_mnsuet?igsh=aHEwamdqcTU1bDEw" class="instagram" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/ict-clubmns-uet-multan/" class="linkedin" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+ 
+                <a href="https://wa.me/923045892020" class="whatsapp" target="_blank">
+                  <i class="fa fa-whatsapp"></i>
+                </a>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <!-- Right Section: Message Form -->
+          <div class="col-lg-6 col-md-6">
+            <div class="form">
+              <h4>Send us a message</h4>
+              <p style="text-align: justify;">
+                Have questions or feedback? For any assistance or inquiries related to CosmiCode, feel free to reach out to us via email or WhatsApp — we're always here to help and support you.
+
+                <a href="mailto:cosmicodepk@gmail.com" class="btn btn-primary" title="Send Email">Send Email</a>
+
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <style>
+
+            /* Only the heart beats */
+            .heart {
+                font-size: 18px;
+                display: inline-block;
+                animation: beat 1.2s infinite alternate;
+            }
+    
+            /* Beating animation */
+            @keyframes beat {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.3); }
+                100% { transform: scale(1); }
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+      <div class="copyright">
+          &copy; 2025 | All Rights Reserved <strong>Cosmicode.</strong> 
+          <span class="heart"></span>
+      </div>
+  </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
